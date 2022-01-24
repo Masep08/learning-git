@@ -1,0 +1,67 @@
+input {
+    width: 50%;
+}
+
+label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input[type="text"], input[type="email"] {
+    padding: 2px 2px;
+    margin: 8px 0px;
+    border: none;
+    border-bottom: 2px solid purple;
+
+}
+
+.transitionDiv {
+
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    animation-name: colorShift;
+    animation-duration: 4s;
+
+}
+
+.transitionDiv:hover {
+
+}
+
+@keyframes colorShift {
+    0% {
+        background: purple;
+        left: 0px;
+        top: 0px;
+    }    
+    25% {
+        background: blue;
+        left: 200px;
+        top: 0px;
+    }
+    50% {
+        background: aqua;
+        left: 200px;
+        top: 200px;
+
+    }
+    75% { 
+        background: green;
+        left: 0px;
+        top: 200px;
+
+    }       
+    100% {
+        background: turquoise;
+        top: 0px;
+        left: 0px;
+    }
+
+
+
+}
+
+
+
+
