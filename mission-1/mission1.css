@@ -1,0 +1,118 @@
+/* making all border-box */
+* {
+  box-sizing: border-box;
+}
+/* Style the body */
+body {
+  font-family: Tahoma;
+  margin: 0px;
+  text-align: center;
+  background: grey;
+}
+
+/* Header */
+.section-header {
+  padding: 60px;
+  text-align: center;
+  background: black;
+  color: grey;
+}
+
+/* animation */
+.animation {
+  color: grey;
+  animation-name: animation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  display: flex;
+  justify-content: center;
+}
+
+/* animation 2 */
+@keyframes animation {
+  0% {
+    color: grey;
+  }
+  25% {
+    color: white;
+  }
+  50% {
+    color: red;
+  }
+  75% {
+    color: white;
+  }
+  100% {
+    color: grey;
+  }
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  background-color: black;
+  text-align: center;
+  justify-content: center;
+}
+
+/* navbar links */
+.navbar a {
+  color: grey;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+/* nav bar hover */
+.navbar a:hover {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+
+/* image and image text */
+.section-img {
+  padding: 5px;
+  margin: 0px;
+}
+
+/* form start */
+.form {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid black;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type="Submit"] {
+  cursor: pointer;
+  float: right;
+  border: 1px solid black;
+}
+/* form end */
+
+/* social handles */
+#icons {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+
+a {
+  color: red;
+  opacity: 0.6;
+  padding: 2px;
+}
